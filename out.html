@@ -1,0 +1,1183 @@
+<html><head>
+
+<style>
+    body {
+        background-color: white;
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid black;
+    }
+    td.source {
+       background-color: lightgrey;
+    }
+    .factorio-icon {
+        margin: 5px;
+        width: 32px;
+        height: 32px;
+    }
+    .amount{
+        font-family: Monospaced;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 5px;
+        position: relative;
+        bottom: 11px;
+        left:5px;
+    }
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td class="name">accumulator</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Accumulator.png" alt="accumulator"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+</tr><tr>
+<td class="name">advanced-circuit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Plastic_bar.png" alt="plastic-bar"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">advanced-oil-processing</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_oil_processing.png" alt="advanced-oil-processing"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Crude_oil.png" alt="crude-oil"></td>
+</tr><tr>
+<td class="name">arithmetic-combinator</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Arithmetic_combinator.png" alt="arithmetic-combinator"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">artillery-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Artillery_shell.png" alt="artillery-shell"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosive_cannon_shell.png" alt="explosive-cannon-shell"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+</tr><tr>
+<td class="name">artillery-targeting-remote</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Artillery_targeting_remote.png" alt="artillery-targeting-remote"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+</tr><tr>
+<td class="name">artillery-turret</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Artillery_turret.png" alt="artillery-turret"></td>
+<td class="source"><span class="amount">60</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">60</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+</tr><tr>
+<td class="name">artillery-wagon</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Artillery_wagon.png" alt="artillery-wagon"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">64</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+<td class="source"><span class="amount">16</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">assembling-machine-1</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Assembling_machine_1.png" alt="assembling-machine-1"></td>
+<td class="source"><span class="amount">9</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">assembling-machine-2</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Assembling_machine_2.png" alt="assembling-machine-2"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Assembling_machine_1.png" alt="assembling-machine-1"></td>
+</tr><tr>
+<td class="name">assembling-machine-3</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Assembling_machine_3.png" alt="assembling-machine-3"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Assembling_machine_2.png" alt="assembling-machine-2"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module.png" alt="speed-module"></td>
+</tr><tr>
+<td class="name">atomic-bomb</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Atomic_bomb.png" alt="atomic-bomb"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_control_unit.png" alt="rocket-control-unit"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-235.png" alt="uranium-235"></td>
+</tr><tr>
+<td class="name">automation-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Automation_science_pack.png" alt="automation-science-pack"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">basic-oil-processing</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Basic_oil_processing.png" alt="basic-oil-processing"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Crude_oil.png" alt="crude-oil"></td>
+</tr><tr>
+<td class="name">battery</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfuric_acid.png" alt="sulfuric-acid"></td>
+</tr><tr>
+<td class="name">battery-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_battery.png" alt="battery-equipment"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+</tr><tr>
+<td class="name">battery-mk2-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_battery_MK2.png" alt="battery-mk2-equipment"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_battery.png" alt="battery-equipment"></td>
+</tr><tr>
+<td class="name">beacon</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Beacon.png" alt="beacon"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">belt-immunity-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Belt_immunity_equipment.png" alt="belt-immunity-equipment"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">big-electric-pole</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Big_electric_pole.png" alt="big-electric-pole"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+</tr><tr>
+<td class="name">boiler</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Boiler.png" alt="boiler"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_furnace.png" alt="stone-furnace"></td>
+</tr><tr>
+<td class="name">burner-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Burner_inserter.png" alt="burner-inserter"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">burner-mining-drill</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Burner_mining_drill.png" alt="burner-mining-drill"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_furnace.png" alt="stone-furnace"></td>
+</tr><tr>
+<td class="name">cannon-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Cannon_shell.png" alt="cannon-shell"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Plastic_bar.png" alt="plastic-bar"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+</tr><tr>
+<td class="name">car</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Car.png" alt="car"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+</tr><tr>
+<td class="name">cargo-wagon</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Cargo_wagon.png" alt="cargo-wagon"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">centrifuge</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Centrifuge.png" alt="centrifuge"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+</tr><tr>
+<td class="name">chemical-plant</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Chemical_plant.png" alt="chemical-plant"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">chemical-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Chemical_science_pack.png" alt="chemical-science-pack"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfur.png" alt="sulfur"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+</tr><tr>
+<td class="name">cliff-explosives</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Cliff_explosives.png" alt="cliff-explosives"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Grenade.png" alt="grenade"></td>
+</tr><tr>
+<td class="name">cluster-grenade</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Cluster_grenade.png" alt="cluster-grenade"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">7</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Grenade.png" alt="grenade"></td>
+</tr><tr>
+<td class="name">coal-liquefaction</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Coal_liquefaction.png" alt="coal-liquefaction"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">25</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil.png" alt="heavy-oil"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steam.png" alt="steam"></td>
+</tr><tr>
+<td class="name">combat-shotgun</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Combat_shotgun.png" alt="combat-shotgun"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wood.png" alt="wood"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">concrete</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_ore.png" alt="iron-ore"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+</tr><tr>
+<td class="name">constant-combinator</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Constant_combinator.png" alt="constant-combinator"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">construction-robot</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Construction_robot.png" alt="construction-robot"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Flying_robot_frame.png" alt="flying-robot-frame"></td>
+</tr><tr>
+<td class="name">copper-cable</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+</tr><tr>
+<td class="name">copper-plate</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_ore.png" alt="copper-ore"></td>
+</tr><tr>
+<td class="name">decider-combinator</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Decider_combinator.png" alt="decider-combinator"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">defender-capsule</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Defender_capsule.png" alt="defender-capsule"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Piercing_rounds_magazine.png" alt="piercing-rounds-magazine"></td>
+</tr><tr>
+<td class="name">destroyer-capsule</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Destroyer_capsule.png" alt="destroyer-capsule"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module.png" alt="speed-module"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Distractor_capsule.png" alt="distractor-capsule"></td>
+</tr><tr>
+<td class="name">discharge-defense-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Discharge_defense.png" alt="discharge-defense-equipment"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Laser_turret.png" alt="laser-turret"></td>
+</tr><tr>
+<td class="name">discharge-defense-remote</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Discharge_defense_remote.png" alt="discharge-defense-remote"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">distractor-capsule</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Distractor_capsule.png" alt="distractor-capsule"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Defender_capsule.png" alt="defender-capsule"></td>
+</tr><tr>
+<td class="name">effectivity-module</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module.png" alt="effectivity-module"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">effectivity-module-2</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module_2.png" alt="effectivity-module-2"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module.png" alt="effectivity-module"></td>
+</tr><tr>
+<td class="name">effectivity-module-3</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module_3.png" alt="effectivity-module-3"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module_2.png" alt="effectivity-module-2"></td>
+</tr><tr>
+<td class="name">electric-engine-unit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+</tr><tr>
+<td class="name">electric-furnace</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_furnace.png" alt="electric-furnace"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+</tr><tr>
+<td class="name">electric-mining-drill</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_mining_drill.png" alt="electric-mining-drill"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">electronic-circuit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+</tr><tr>
+<td class="name">empty-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+</tr><tr>
+<td class="name">empty-crude-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_crude_oil_barrel.png" alt="empty-crude-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Crude_oil_barrel.png" alt="crude-oil-barrel"></td>
+</tr><tr>
+<td class="name">empty-heavy-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_heavy_oil_barrel.png" alt="empty-heavy-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil_barrel.png" alt="heavy-oil-barrel"></td>
+</tr><tr>
+<td class="name">empty-light-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_light_oil_barrel.png" alt="empty-light-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil_barrel.png" alt="light-oil-barrel"></td>
+</tr><tr>
+<td class="name">empty-lubricant-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_lubricant_barrel.png" alt="empty-lubricant-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant_barrel.png" alt="lubricant-barrel"></td>
+</tr><tr>
+<td class="name">empty-petroleum-gas-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_petroleum_gas_barrel.png" alt="empty-petroleum-gas-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Petroleum_gas_barrel.png" alt="petroleum-gas-barrel"></td>
+</tr><tr>
+<td class="name">empty-sulfuric-acid-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_sulfuric_acid_barrel.png" alt="empty-sulfuric-acid-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfuric_acid_barrel.png" alt="sulfuric-acid-barrel"></td>
+</tr><tr>
+<td class="name">empty-water-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_water_barrel.png" alt="empty-water-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water_barrel.png" alt="water-barrel"></td>
+</tr><tr>
+<td class="name">energy-shield-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Energy_shield.png" alt="energy-shield-equipment"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">energy-shield-mk2-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Energy_shield_MK2.png" alt="energy-shield-mk2-equipment"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Energy_shield.png" alt="energy-shield-equipment"></td>
+</tr><tr>
+<td class="name">engine-unit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">exoskeleton-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Exoskeleton.png" alt="exoskeleton-equipment"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+</tr><tr>
+<td class="name">explosive-cannon-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Explosive_cannon_shell.png" alt="explosive-cannon-shell"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Plastic_bar.png" alt="plastic-bar"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+</tr><tr>
+<td class="name">explosive-rocket</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Explosive_rocket.png" alt="explosive-rocket"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket.png" alt="rocket"></td>
+</tr><tr>
+<td class="name">explosive-uranium-cannon-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Explosive_uranium_cannon_shell.png" alt="explosive-uranium-cannon-shell"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-238.png" alt="uranium-238"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosive_cannon_shell.png" alt="explosive-cannon-shell"></td>
+</tr><tr>
+<td class="name">explosives</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfur.png" alt="sulfur"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+</tr><tr>
+<td class="name">express-splitter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Express_splitter.png" alt="express-splitter"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_splitter.png" alt="fast-splitter"></td>
+<td class="source"><span class="amount">80</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+</tr><tr>
+<td class="name">express-transport-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Express_transport_belt.png" alt="express-transport-belt"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_transport_belt.png" alt="fast-transport-belt"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+</tr><tr>
+<td class="name">express-underground-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Express_underground_belt.png" alt="express-underground-belt"></td>
+<td class="source"><span class="amount">80</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_underground_belt.png" alt="fast-underground-belt"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+</tr><tr>
+<td class="name">fast-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_inserter.png" alt="fast-inserter"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Inserter.png" alt="inserter"></td>
+</tr><tr>
+<td class="name">fast-splitter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_splitter.png" alt="fast-splitter"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Splitter.png" alt="splitter"></td>
+</tr><tr>
+<td class="name">fast-transport-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_transport_belt.png" alt="fast-transport-belt"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+</tr><tr>
+<td class="name">fast-underground-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_underground_belt.png" alt="fast-underground-belt"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Underground_belt.png" alt="underground-belt"></td>
+</tr><tr>
+<td class="name">fill-crude-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_crude_oil_barrel.png" alt="fill-crude-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Crude_oil.png" alt="crude-oil"></td>
+</tr><tr>
+<td class="name">fill-heavy-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_heavy_oil_barrel.png" alt="fill-heavy-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil.png" alt="heavy-oil"></td>
+</tr><tr>
+<td class="name">fill-light-oil-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_light_oil_barrel.png" alt="fill-light-oil-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil.png" alt="light-oil"></td>
+</tr><tr>
+<td class="name">fill-lubricant-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_lubricant_barrel.png" alt="fill-lubricant-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+</tr><tr>
+<td class="name">fill-petroleum-gas-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_petroleum_gas_barrel.png" alt="fill-petroleum-gas-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Petroleum_gas.png" alt="petroleum-gas"></td>
+</tr><tr>
+<td class="name">fill-sulfuric-acid-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_sulfuric_acid_barrel.png" alt="fill-sulfuric-acid-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfuric_acid.png" alt="sulfuric-acid"></td>
+</tr><tr>
+<td class="name">fill-water-barrel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fill_water_barrel.png" alt="fill-water-barrel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Empty_barrel.png" alt="empty-barrel"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+</tr><tr>
+<td class="name">filter-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Filter_inserter.png" alt="filter-inserter"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_inserter.png" alt="fast-inserter"></td>
+</tr><tr>
+<td class="name">firearm-magazine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Firearm_magazine.png" alt="firearm-magazine"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">flamethrower</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Flamethrower.png" alt="flamethrower"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">flamethrower-ammo</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Flamethrower_ammo.png" alt="flamethrower-ammo"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Crude_oil.png" alt="crude-oil"></td>
+</tr><tr>
+<td class="name">flamethrower-turret</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Flamethrower_turret.png" alt="flamethrower-turret"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">fluid-wagon</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Fluid_wagon.png" alt="fluid-wagon"></td>
+<td class="source"><span class="amount">16</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Storage_tank.png" alt="storage-tank"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">flying-robot-frame</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Flying_robot_frame.png" alt="flying-robot-frame"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+</tr><tr>
+<td class="name">fusion-reactor-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Portable_fusion_reactor.png" alt="fusion-reactor-equipment"></td>
+<td class="source"><span class="amount">200</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+</tr><tr>
+<td class="name">gate</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Gate.png" alt="gate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wall.png" alt="stone-wall"></td>
+</tr><tr>
+<td class="name">green-wire</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Green_wire.png" alt="green-wire"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">grenade</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Grenade.png" alt="grenade"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">gun-turret</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Gun_turret.png" alt="gun-turret"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">hazard-concrete</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Hazard_concrete.png" alt="hazard-concrete"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+</tr><tr>
+<td class="name">heat-exchanger</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Heat_exchanger.png" alt="heat-exchanger"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">heat-pipe</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Heat_pipe.png" alt="heat-pipe"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+</tr><tr>
+<td class="name">heavy-armor</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_armor.png" alt="heavy-armor"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+</tr><tr>
+<td class="name">heavy-oil-cracking</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil_cracking.png" alt="heavy-oil-cracking"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil.png" alt="heavy-oil"></td>
+</tr><tr>
+<td class="name">inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Inserter.png" alt="inserter"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">iron-chest</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_chest.png" alt="iron-chest"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">iron-gear-wheel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">iron-plate</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_ore.png" alt="iron-ore"></td>
+</tr><tr>
+<td class="name">iron-stick</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">kovarex-enrichment-process</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Kovarex_enrichment_process.png" alt="kovarex-enrichment-process"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-235.png" alt="uranium-235"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-238.png" alt="uranium-238"></td>
+</tr><tr>
+<td class="name">lab</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Lab.png" alt="lab"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+</tr><tr>
+<td class="name">land-mine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Land_mine.png" alt="land-mine"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+</tr><tr>
+<td class="name">landfill</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Landfill.png" alt="landfill"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone.png" alt="stone"></td>
+</tr><tr>
+<td class="name">laser-turret</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Laser_turret.png" alt="laser-turret"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">12</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">light-armor</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Light_armor.png" alt="light-armor"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">light-oil-cracking</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil_cracking.png" alt="light-oil-cracking"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil.png" alt="light-oil"></td>
+</tr><tr>
+<td class="name">locomotive</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Locomotive.png" alt="locomotive"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+</tr><tr>
+<td class="name">logistic-chest-active-provider</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Active_provider_chest.png" alt="logistic-chest-active-provider"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+</tr><tr>
+<td class="name">logistic-chest-buffer</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Buffer_chest.png" alt="logistic-chest-buffer"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+</tr><tr>
+<td class="name">logistic-chest-passive-provider</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Passive_provider_chest.png" alt="logistic-chest-passive-provider"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+</tr><tr>
+<td class="name">logistic-chest-requester</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Requester_chest.png" alt="logistic-chest-requester"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+</tr><tr>
+<td class="name">logistic-chest-storage</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Storage_chest.png" alt="logistic-chest-storage"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+</tr><tr>
+<td class="name">logistic-robot</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Logistic_robot.png" alt="logistic-robot"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Flying_robot_frame.png" alt="flying-robot-frame"></td>
+</tr><tr>
+<td class="name">logistic-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Logistic_science_pack.png" alt="logistic-science-pack"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Inserter.png" alt="inserter"></td>
+</tr><tr>
+<td class="name">long-handed-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Long-handed_inserter.png" alt="long-handed-inserter"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Inserter.png" alt="inserter"></td>
+</tr><tr>
+<td class="name">low-density-structure</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Plastic_bar.png" alt="plastic-bar"></td>
+</tr><tr>
+<td class="name">lubricant</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Lubricant.png" alt="lubricant"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil.png" alt="heavy-oil"></td>
+</tr><tr>
+<td class="name">medium-electric-pole</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Medium_electric_pole.png" alt="medium-electric-pole"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+</tr><tr>
+<td class="name">military-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Military_science_pack.png" alt="military-science-pack"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Piercing_rounds_magazine.png" alt="piercing-rounds-magazine"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Grenade.png" alt="grenade"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wall.png" alt="stone-wall"></td>
+</tr><tr>
+<td class="name">modular-armor</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Modular_armor.png" alt="modular-armor"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">night-vision-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Nightvision.png" alt="night-vision-equipment"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">nuclear-fuel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Nuclear_fuel.png" alt="nuclear-fuel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_fuel.png" alt="rocket-fuel"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-235.png" alt="uranium-235"></td>
+</tr><tr>
+<td class="name">nuclear-fuel-reprocessing</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Nuclear_fuel_reprocessing.png" alt="nuclear-fuel-reprocessing"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Used_up_uranium_fuel_cell.png" alt="used-up-uranium-fuel-cell"></td>
+</tr><tr>
+<td class="name">nuclear-reactor</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Nuclear_reactor.png" alt="nuclear-reactor"></td>
+<td class="source"><span class="amount">500</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">500</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">500</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">500</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+</tr><tr>
+<td class="name">offshore-pump</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Offshore_pump.png" alt="offshore-pump"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">oil-refinery</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Oil_refinery.png" alt="oil-refinery"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+</tr><tr>
+<td class="name">personal-laser-defense-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_laser_defense.png" alt="personal-laser-defense-equipment"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Laser_turret.png" alt="laser-turret"></td>
+</tr><tr>
+<td class="name">personal-roboport-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_roboport.png" alt="personal-roboport-equipment"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">45</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Battery.png" alt="battery"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">personal-roboport-mk2-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_roboport_MK2.png" alt="personal-roboport-mk2-equipment"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Personal_roboport.png" alt="personal-roboport-equipment"></td>
+</tr><tr>
+<td class="name">piercing-rounds-magazine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Piercing_rounds_magazine.png" alt="piercing-rounds-magazine"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Firearm_magazine.png" alt="firearm-magazine"></td>
+</tr><tr>
+<td class="name">piercing-shotgun-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Piercing_shotgun_shells.png" alt="piercing-shotgun-shell"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Shotgun_shells.png" alt="shotgun-shell"></td>
+</tr><tr>
+<td class="name">pipe</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">pipe-to-ground</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe_to_ground.png" alt="pipe-to-ground"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">pistol</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Pistol.png" alt="pistol"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+</tr><tr>
+<td class="name">plastic-bar</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Plastic_bar.png" alt="plastic-bar"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Petroleum_gas.png" alt="petroleum-gas"></td>
+</tr><tr>
+<td class="name">poison-capsule</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Poison_capsule.png" alt="poison-capsule"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">power-armor</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Power_armor.png" alt="power-armor"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+</tr><tr>
+<td class="name">power-armor-mk2</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Power_armor_MK2.png" alt="power-armor-mk2"></td>
+<td class="source"><span class="amount">60</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">40</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">25</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module_2.png" alt="speed-module-2"></td>
+<td class="source"><span class="amount">25</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module_2.png" alt="effectivity-module-2"></td>
+</tr><tr>
+<td class="name">power-switch</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Power_switch.png" alt="power-switch"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">processing-unit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfuric_acid.png" alt="sulfuric-acid"></td>
+</tr><tr>
+<td class="name">production-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Production_science_pack.png" alt="production-science-pack"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Straight_rail.png" alt="rail"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_furnace.png" alt="electric-furnace"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module.png" alt="productivity-module"></td>
+</tr><tr>
+<td class="name">productivity-module</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module.png" alt="productivity-module"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">productivity-module-2</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module_2.png" alt="productivity-module-2"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module.png" alt="productivity-module"></td>
+</tr><tr>
+<td class="name">productivity-module-3</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module_3.png" alt="productivity-module-3"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Productivity_module_2.png" alt="productivity-module-2"></td>
+</tr><tr>
+<td class="name">programmable-speaker</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Programmable_speaker.png" alt="programmable-speaker"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">pump</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Pump.png" alt="pump"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">pumpjack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Pumpjack.png" alt="pumpjack"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">radar</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">rail</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Straight_rail.png" alt="rail"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone.png" alt="stone"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+</tr><tr>
+<td class="name">rail-chain-signal</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rail_chain_signal.png" alt="rail-chain-signal"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">rail-signal</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rail_signal.png" alt="rail-signal"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">red-wire</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Red_wire.png" alt="red-wire"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">refined-concrete</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Refined_concrete.png" alt="refined-concrete"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+</tr><tr>
+<td class="name">refined-hazard-concrete</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Refined_hazard_concrete.png" alt="refined-hazard-concrete"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Refined_concrete.png" alt="refined-concrete"></td>
+</tr><tr>
+<td class="name">repair-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Repair_pack.png" alt="repair-pack"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">roboport</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Roboport.png" alt="roboport"></td>
+<td class="source"><span class="amount">45</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">45</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">45</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">rocket</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket.png" alt="rocket"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Explosives.png" alt="explosives"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">rocket-control-unit</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_control_unit.png" alt="rocket-control-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module.png" alt="speed-module"></td>
+</tr><tr>
+<td class="name">rocket-fuel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_fuel.png" alt="rocket-fuel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Solid_fuel.png" alt="solid-fuel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil.png" alt="light-oil"></td>
+</tr><tr>
+<td class="name">rocket-launcher</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_launcher.png" alt="rocket-launcher"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">rocket-part</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_part.png" alt="rocket-part"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_control_unit.png" alt="rocket-control-unit"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_fuel.png" alt="rocket-fuel"></td>
+</tr><tr>
+<td class="name">rocket-silo</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_silo.png" alt="rocket-silo"></td>
+<td class="source"><span class="amount">1000</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">200</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">200</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electric_engine_unit.png" alt="electric-engine-unit"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+<td class="source"><span class="amount">1000</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Concrete.png" alt="concrete"></td>
+</tr><tr>
+<td class="name">satellite</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Satellite.png" alt="satellite"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_fuel.png" alt="rocket-fuel"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Solar_panel.png" alt="solar-panel"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Accumulator.png" alt="accumulator"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+</tr><tr>
+<td class="name">shotgun</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Shotgun.png" alt="shotgun"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wood.png" alt="wood"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">shotgun-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Shotgun_shells.png" alt="shotgun-shell"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+</tr><tr>
+<td class="name">slowdown-capsule</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Slowdown_capsule.png" alt="slowdown-capsule"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Coal.png" alt="coal"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">small-electric-pole</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Small_electric_pole.png" alt="small-electric-pole"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wood.png" alt="wood"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+</tr><tr>
+<td class="name">small-lamp</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Lamp.png" alt="small-lamp"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_cable.png" alt="copper-cable"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">solar-panel</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Solar_panel.png" alt="solar-panel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">solar-panel-equipment</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Portable_solar_panel.png" alt="solar-panel-equipment"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Solar_panel.png" alt="solar-panel"></td>
+</tr><tr>
+<td class="name">solid-fuel-from-heavy-oil</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Solid_fuel_from_heavy_oil.png" alt="solid-fuel-from-heavy-oil"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Heavy_oil.png" alt="heavy-oil"></td>
+</tr><tr>
+<td class="name">solid-fuel-from-light-oil</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Solid_fuel_from_light_oil.png" alt="solid-fuel-from-light-oil"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Light_oil.png" alt="light-oil"></td>
+</tr><tr>
+<td class="name">solid-fuel-from-petroleum-gas</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Solid_fuel_from_petroleum_gas.png" alt="solid-fuel-from-petroleum-gas"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Petroleum_gas.png" alt="petroleum-gas"></td>
+</tr><tr>
+<td class="name">speed-module</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module.png" alt="speed-module"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">speed-module-2</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module_2.png" alt="speed-module-2"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module.png" alt="speed-module"></td>
+</tr><tr>
+<td class="name">speed-module-3</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module_3.png" alt="speed-module-3"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Speed_module_2.png" alt="speed-module-2"></td>
+</tr><tr>
+<td class="name">spidertron</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Spidertron.png" alt="spidertron"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Raw_fish.png" alt="raw-fish"></td>
+<td class="source"><span class="amount">16</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_control_unit.png" alt="rocket-control-unit"></td>
+<td class="source"><span class="amount">150</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Efficiency_module_3.png" alt="effectivity-module-3"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_launcher.png" alt="rocket-launcher"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Portable_fusion_reactor.png" alt="fusion-reactor-equipment"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Exoskeleton.png" alt="exoskeleton-equipment"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+</tr><tr>
+<td class="name">spidertron-remote</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Spidertron_remote.png" alt="spidertron-remote"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Rocket_control_unit.png" alt="rocket-control-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Radar.png" alt="radar"></td>
+</tr><tr>
+<td class="name">splitter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Splitter.png" alt="splitter"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">4</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+</tr><tr>
+<td class="name">stack-filter-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Stack_filter_inserter.png" alt="stack-filter-inserter"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stack_inserter.png" alt="stack-inserter"></td>
+</tr><tr>
+<td class="name">stack-inserter</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Stack_inserter.png" alt="stack-inserter"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Fast_inserter.png" alt="fast-inserter"></td>
+</tr><tr>
+<td class="name">steam-engine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Steam_engine.png" alt="steam-engine"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">steam-turbine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Steam_turbine.png" alt="steam-turbine"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Pipe.png" alt="pipe"></td>
+</tr><tr>
+<td class="name">steel-chest</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_chest.png" alt="steel-chest"></td>
+<td class="source"><span class="amount">8</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+</tr><tr>
+<td class="name">steel-furnace</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_furnace.png" alt="steel-furnace"></td>
+<td class="source"><span class="amount">6</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+</tr><tr>
+<td class="name">steel-plate</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+</tr><tr>
+<td class="name">stone-brick</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone.png" alt="stone"></td>
+</tr><tr>
+<td class="name">stone-furnace</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_furnace.png" alt="stone-furnace"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone.png" alt="stone"></td>
+</tr><tr>
+<td class="name">stone-wall</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Wall.png" alt="stone-wall"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Stone_brick.png" alt="stone-brick"></td>
+</tr><tr>
+<td class="name">storage-tank</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Storage_tank.png" alt="storage-tank"></td>
+<td class="source"><span class="amount">20</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+</tr><tr>
+<td class="name">submachine-gun</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Submachine_gun.png" alt="submachine-gun"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">substation</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Substation.png" alt="substation"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Copper_plate.png" alt="copper-plate"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+</tr><tr>
+<td class="name">sulfur</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfur.png" alt="sulfur"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+<td class="source"><span class="amount">30</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Petroleum_gas.png" alt="petroleum-gas"></td>
+</tr><tr>
+<td class="name">sulfuric-acid</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfuric_acid.png" alt="sulfuric-acid"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Sulfur.png" alt="sulfur"></td>
+<td class="source"><span class="amount">100</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Water.png" alt="water"></td>
+</tr><tr>
+<td class="name">tank</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Tank.png" alt="tank"></td>
+<td class="source"><span class="amount">50</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">15</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Advanced_circuit.png" alt="advanced-circuit"></td>
+<td class="source"><span class="amount">32</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Engine_unit.png" alt="engine-unit"></td>
+</tr><tr>
+<td class="name">train-stop</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Train_stop.png" alt="train-stop"></td>
+<td class="source"><span class="amount">6</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Steel_plate.png" alt="steel-plate"></td>
+<td class="source"><span class="amount">6</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_stick.png" alt="iron-stick"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Electronic_circuit.png" alt="electronic-circuit"></td>
+</tr><tr>
+<td class="name">transport-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_gear_wheel.png" alt="iron-gear-wheel"></td>
+</tr><tr>
+<td class="name">underground-belt</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Underground_belt.png" alt="underground-belt"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">5</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Transport_belt.png" alt="transport-belt"></td>
+</tr><tr>
+<td class="name">uranium-cannon-shell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium_cannon_shell.png" alt="uranium-cannon-shell"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-238.png" alt="uranium-238"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Cannon_shell.png" alt="cannon-shell"></td>
+</tr><tr>
+<td class="name">uranium-fuel-cell</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium_fuel_cell.png" alt="uranium-fuel-cell"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Iron_plate.png" alt="iron-plate"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-235.png" alt="uranium-235"></td>
+<td class="source"><span class="amount">19</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-238.png" alt="uranium-238"></td>
+</tr><tr>
+<td class="name">uranium-processing</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium_processing.png" alt="uranium-processing"></td>
+<td class="source"><span class="amount">10</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium_ore.png" alt="uranium-ore"></td>
+</tr><tr>
+<td class="name">uranium-rounds-magazine</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium_rounds_magazine.png" alt="uranium-rounds-magazine"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Uranium-238.png" alt="uranium-238"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Piercing_rounds_magazine.png" alt="piercing-rounds-magazine"></td>
+</tr><tr>
+<td class="name">utility-science-pack</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Utility_science_pack.png" alt="utility-science-pack"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Processing_unit.png" alt="processing-unit"></td>
+<td class="source"><span class="amount">1</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Flying_robot_frame.png" alt="flying-robot-frame"></td>
+<td class="source"><span class="amount">3</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Low_density_structure.png" alt="low-density-structure"></td>
+</tr><tr>
+<td class="name">wooden-chest</td>
+<td class="target"><img class="factorio-icon" src="https://wiki.factorio.com/images/Wooden_chest.png" alt="wooden-chest"></td>
+<td class="source"><span class="amount">2</span>&nbsp;<img class="factorio-icon" src="https://wiki.factorio.com/images/Wood.png" alt="wood"></td>
+</tr></table>
+</body>
