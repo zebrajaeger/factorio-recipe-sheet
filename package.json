@@ -1,0 +1,17 @@
+{
+  "name": "factorio-recipe-sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "nodemon src/.",
+    "start": "node src/."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-pdf-node": "^1.0.7",
+    "nodemon": "^2.0.12"
+  }
+}
